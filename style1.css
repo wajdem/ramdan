@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kufam&family=Source+Sans+Pro:wght@300;600&display=swap');
+h1{
+    font-family: 'Kufam', sans-serif;
+}
+.container1{
+    width: 100px;
+    height: 100px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0% {
+        -webkit-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+        transform: rotate(7deg);
+      }
+      50% {
+        -webkit-transform: rotate(-7deg);
+        -ms-transform: rotate(-7deg);
+        transform: rotate(-7deg);
+      }
+      100% {
+        -webkit-transform: rotate(7deg);
+        -ms-transform: rotate(7deg);
+        transform: rotate(7deg);
+      }
+}
+.txt-container {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    margin-bottom: 50%;
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid #f0c419;
+    white-space: nowrap;
+    font-size: 4rem;
+    width: 0;
+    animation: typing 6s forwards;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  img{width: 100px;}
